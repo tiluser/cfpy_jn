@@ -16,7 +16,7 @@ Demos
 
 The notebook shows usage of simple commands and has a machine learning example
 plus a simple todo list/daily log app that uses the Dropbox API. The last example
-runs on Windows only but the 
+runs on Windows only but the other code should be able to run on Linux or the Mac.
 
 What you need
 -------------
