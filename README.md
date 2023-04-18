@@ -1,47 +1,26 @@
-Creole Forth for Python
------------------------
+Creole Forth for Python in a Jupyter notebook demo
+--------------------------------------------------
 
 Intro
 -----
 
-This is a Forth-like scripting language built in Python 3 and is preceded by similar languages that were built in
-Delphi/Lazarus, Excel VBA, and JavaScript.  It can be used either standalone or as a DSL embedded as part of a
-larger application. 
+Examples of use of Jupyter Notebook as a simple IDE for Creole Forth for Python. 
 
 Methodology
 -----------
-Primitives are defined as Python methods attached to objects. They are roughly analagous to core words defined 
-in assembly language in some Forth compilers. They are then passed to the buildPrimitive method in the CreoleForthBundle 
-class, which assigns them a name, vocabulary, and integer token value, which is used as an address. 
 
-High-level or colon definitions are assemblages of primitives and previously defined high-level definitions.
-They are defined by the colon compiler. 
+Import CreoleForth and set up magic commands to compile and run Forth code.
 
+Demos
+-----
 
-Quick intro
------------
+The notebook shows usage of simple commands and has a machine learning example
+plus a simple todo list/daily log app that uses the Dropbox API. The last example
+runs on Windows only but the 
 
-1. Clone the cfpy project.
-
-2. Navigate to the cfpy folder and run the following command: python runcfpyscr.py script1.f
-
-3. A message saying "Hello World" should come up. 
-
-
-Finding the contents of the dictionary
---------------------------------------
-1. Run python runcfypscr.py script2.f. This will run the VLIST word.
-
-
-Compiling and executing a high-level definition
------------------------------------------------
-1. Run python runcfypscr.py script3.f. This defines and executes the high-level definition TEST1.
-   It uses IF-ELSE-THEN branching to either run the HELLO primitive or add and print the sum of 
-   3 and 4. 
-
-Application-specific definitions
---------------------------------
-1. Define the primitives in AppSpec.py.
-2. Build the primitives with the cfb1.buildPrimitive method.
-3. Build high-level definitions with the cfb1.buildHighLevel method.
-4. Run runcfypscr.py test.f to run the sample testing definition in the APPSPEC vocabulary.
+What you need
+-------------
+This notebook was developed on top of Anaconda 2.4.0. Other setups might work. 
+It's advisable to create a separate virtual environment with the command 
+conda create --name <env_name> and then add packages as needed to run the notebook 
+code.
