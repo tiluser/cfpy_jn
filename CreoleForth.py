@@ -1110,6 +1110,7 @@ cfb1.buildHighLevel(gsp,": TDL DO HELLO LOOP ;", "Testing DO LOOP")
 cfb1.buildHighLevel(gsp,": CONSTANT CREATE , DOES> @ ;", "The quintessential defining word")
 cfb1.buildHighLevel(gsp,": H3 HELLO HELLO HELLO ;", "3 hellos")
 cfb1.buildHighLevel(gsp,"3 CONSTANT THREE", "A constant")
+cfb1.buildHighLevel(gsp,": 2DUP SWAP DUP ROT DUP -ROT ;","( x y -- x y x y ) Duplicates two items on the stack")
 gsp.DataStack = []
 
 #cp = CorePrims()
