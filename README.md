@@ -24,3 +24,15 @@ This notebook was developed on top of Anaconda 2.4.0. Other setups might work.
 It's advisable to create a separate virtual environment with the command 
 conda create --name <env_name> and then add packages as needed to run the notebook 
 code.
+
+If not already installed, the following packages should be installed either with
+the conda or pip command as below:
+
+conda install pyserial
+conda install series
+pip install numpy
+pip install PyMsgBox
+pip install pandas
+pip install scikit-learn
+pip install matplotlib
+pip install dropbox
