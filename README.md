@@ -36,3 +36,7 @@ pip install pandas
 pip install scikit-learn
 pip install matplotlib
 pip install dropbox
+pip install "tensorflow<2.11"
+
+The Tensorflow version is limited so as to not deal with the complexities
+of GPU support, which isn't needed for the demo.  
